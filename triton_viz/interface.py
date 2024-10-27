@@ -52,7 +52,7 @@ def launch(share=True):
                     )
 
         def cache_block(idx):
-            name = tempfile.NamedTemporaryFile(suffix=".svg")
+            name = tempfile.NamedTemporaryFile(suffix=".png")
             w, h = triton_viz.draw_record(program_records[idx], tt, name.name)
             size[0] = w
             size[1] = h
